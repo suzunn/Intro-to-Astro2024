@@ -11,6 +11,7 @@
 * How to read scientific papers (ADS, Mendeley, arXiv)
 
 
+
 ## Assignments for Week 1
 
 ### If you have not already:
