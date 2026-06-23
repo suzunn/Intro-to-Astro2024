@@ -62,5 +62,38 @@ After the completion of these tutorials, students will have the skills needed to
 ## The Future of the Project:
 We hope this project becomes self-sustaining in such a way that others can contribute and add value to the current set of research skills presented here. If you have questions, comments, or ideas, please feel free to contact us through the issue tracker on this repo. If you work in another field such as biology, chemistry, another specialty within astronomy, and are interested in replicating this project for your specific field, please email me directly.
 
+## Repository Guide
+
+The repository is organized by workshop week. Each weekly directory contains the notebooks, data files, slides, readings, and assignment notes used for that session:
+
+| Directory | Focus |
+| --- | --- |
+| `Week1_Unix_Git_Papers/` | Unix, Git, GitHub, Python/Jupyter basics, and scientific paper reading |
+| `Week2_Python_Packages/` | pandas, NumPy, SciPy, Astropy, and astronomy data examples |
+| `Week3_Matplotlib_Exoplanets/` | Matplotlib plotting and NASA Exoplanet Archive tutorials |
+| `Week4_TESS_Gaia/` | TESS light curves, Gaia queries, and color-magnitude diagrams |
+| `Week5_CV_Latex_Overleaf_website/` | CV writing, personal websites, LaTeX, and Overleaf |
+| `Week6_RV_Summer_Research/` | Radial velocity fitting, model fitting, and summer research planning |
+
+Start with the `README.md` inside each weekly directory before opening the notebooks. The weekly README files explain the agenda, assignments, paper reading, and deliverables for that session.
+
+## Working With the Materials Locally
+
+Clone the repository and launch Jupyter from the repository root so notebook-relative data paths resolve consistently:
+
+```bash
+git clone https://github.com/howardisaacson/Intro-to-Astro2024.git
+cd Intro-to-Astro2024
+jupyter lab
+```
+
+If a notebook depends on packages that are not installed yet, install the scientific Python stack used across the course:
+
+```bash
+python -m pip install numpy scipy pandas matplotlib astropy jupyterlab
+```
+
+Some notebooks use bundled `.csv`, `.fits`, `.txt`, or spreadsheet files from their weekly `data/` directories. Keep the directory structure intact when downloading individual folders, otherwise those examples may need path updates.
+
 ## Code of Conduct
 We strive to maintain a welcoming and supportive community for everyone regardless of race, religion, background or identity. For more details, see our [Code of Conduct page](https://sites.google.com/view/intro-2-astro/code-of-conduct).
